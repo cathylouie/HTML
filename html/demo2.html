@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>
+            My page
+        </title>
+        <style>
+             h1 {
+                font-family: arial;
+                color: #000088;
+                background-color: rgba(200, 255, 200, 0.5);
+             }
+
+             body {
+                background-image: url(/home/user/src/html/spacebackground2.jpg)
+             }
+
+             #box1 {
+                width: 1500px;
+                height: 100px;
+                margin-bottom: 10px;
+                background-color: rgba(200, 255, 200, 0.5);
+             }
+
+             #box2 {
+                width: 800px;
+                height: 150px;
+                margin-bottom: 10px;
+                background-color: rgba(143, 161, 178, 1);
+             }
+
+            #box3 {
+                width: 225px;
+                height: 300px;
+                margin-bottom: 10px;
+                background-color: rgba(70, 175, 227, 1);
+                padding-left: 35px;
+             }
+
+            .dialogue {
+                float: left;
+                color:#FFFFFF;
+                padding: 10px 10px 10px 10px;
+                background-color: rgba(200, 255, 200, 0.5);
+                margin-right: 10px;
+                margin-left: 10px;
+             }
+
+            #twitter {
+                float: left;
+                margin-left: 50px;
+             }
+
+             #form1 {
+                color: #FFFFFF;
+                width: 170px;
+                margin-top: 10px;
+             }
+
+        </style>
+    </head>
+    <body> 
+        <ul>
+            <li>This is a list item</li>
+            <li>And here is another</li>
+            <li>Fish</li>
+        </ul>
+        <div id="twitter"> 
+            <a class="twitter-timeline" href="https://twitter.com/mitzisong" data-widget-id="438040315497156608">Tweets by @mitzisong</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+
+        <div class="dialogue" id="box1">
+            <p>
+                Hello my name is Mitzi Song
+            </p>
+        </div>
+        
+        <div class="dialogue" id="box2">
+            <p>
+                My awesome projects
+            </p>
+        </div>
+
+        <div class="dialogue" id="box3">
+            <p>
+                Contact Information
+            </p>
+            <div class="form" id="form1">
+                <form action="/some_webpage" method="GET">
+                Name: <input type="text" name="user_name">
+                Email: <input type="text" name="user_email">
+                Hometown: <input type="text" name="user_hometown">
+                Are you a human?: <br>Yes <input type="radio" name="user_bunny_preference" value="yes"> No<input type="radio" name="user_bunny_preference" value="no"
+                <br><button type="submit">Send your message</button>
+                </form>
+            </div>
+        </div>   
+
+
+    </body>
+</html>
